@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Case Progress Client</title>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="caseprogress.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body style="background-color: rgb(211, 207, 201); position:relative">
+        <nav>   
+            <ul>   
+               <li class="items"><a href="#">Home</I></a></li>   
+               <li class="items"><a href="#">About Us</a></li>   
+               <li class="items"><a href="#">Contact Us</a></li>   
+               <li class="items" 
+               onclick = "window.location.href='billing.html';"><a href="#">Logout</a></li>   
+            </ul>   
+         </nav>
+         <input class="searchbar" type="text" placeholder="&#128269; Search">
+         <img src="u1.png" class="p1">
+         <img src="u2.png" class="p2">
+         <img src="u3.png" class="p3">
+         <img src="eee.png" class="p4">
+         <img src="ggg.png" class="p5">
+         <div class="bod">
+            <div class="wrapper">
+            <header>
+            <p class="current-date"></p>
+            <div class="icons">
+                <span id="prev" class="material-symbols-rounded"><</span>
+                <span id="next" class="material-symbols-rounded">></span>
+            </div>
+            </header>
+            <div class="calendar">
+            <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+            <ul class="days"></ul>
+            </div>
+        </div>
+       </div>
+       
+         <script src="caseprogress.js"></script>
+    </body>
+</html>

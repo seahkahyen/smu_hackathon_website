@@ -1,0 +1,67 @@
+<!DOCTYPE html>   
+<html>   
+<head>   
+   <meta charset="utf-8">   
+   <title>Responsive Navigation Bar</title>   
+   <link rel="stylesheet" href="firstpageLawyer.css">   
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+     
+</head>   
+  
+<body style="background-color: rgb(211, 207, 201);">   
+   <script src="firstpageLawyer.js"></script>   
+   <nav>   
+    <ul>   
+       <li class="items"><a href="#">Home</I></a></li>   
+       <li class="items"><a href="#">Contact Us</a></li>   
+       <li class="items"><a href="#">FeedBack</a></li>   
+       <li class="items" onclick="window.location.href='billing.html';"><a href="#">Logout</a></li>   
+    </ul>   
+ </nav>   
+ <p class="text1">Welcome Back!</p>  
+   <div class = "info-grid">  
+      <div class = "grid1">  
+        Onboarding  
+        <div class="grid1-text">  
+        </div>  
+        <button class="start1">See More ></button>  
+      </div>  
+      <div class = "grid2">  
+         Case Progress  
+         <div class="grid2-text">  
+         </div>  
+         <button class="start2" onclick="window.location.href='caseprogress.html';"> See More ></button>  
+      </div>  
+      <div class="grid3">  
+         Billing Information  
+         <div class="grid3-text">  
+         </div>  
+         <button style="transition: 0.2s;"class="start3" onclick="window.location.href='jesus.html';">See More ></button>  
+      </div>  
+      <div class="grid3">  
+        Talk To Your Lawyer  
+        <div class="grid3-text">  
+        </div>  
+        <button class="start3">See More ></button>  
+     </div>  
+   </div>  
+   <style>  
+      
+    .info-grid {  
+      display: flex;  
+      justify-content: center;  
+    }  
+      
+    .grid1, .grid2, .grid3 {  
+      display: flex;  
+      flex-direction: column;  
+      align-items: center;  
+      margin: 0 20px; /* Adjust the margin value to add spacing between the divs */  
+      text-align: center;  
+    }  
+ </style>  
+  
+</body>   
+</html>

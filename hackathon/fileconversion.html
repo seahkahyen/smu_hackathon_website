@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>File Conversion</title>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="fileconversion.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body id = "e" style="background-color: rgb(211, 207, 201);">
+        <nav> 
+            <ul> 
+               <li class="items"><a href="#">R & I</I></a></li> 
+               <li class="items"><a href="#">Tax</a></li> 
+               <li class="items"><a href="#">Litigation</a></li> 
+               <li class="items"><a href="#">Corportate</a></li> 
+               <li class="items"><a href="#">Feedback</a></li> 
+            </ul> 
+         </nav> 
+        <div class = "preview">
+        <div class="container">
+            <p class="text1" id="y">PDF to Word</p>
+            <p id="s"></p>
+            <div id="preview-container"></div>
+            <div id="t">
+                <label for="myFileInput" class="file-label">
+                    <span class="file-text">Select a PDF File</span>
+                </label>
+                <input type="file" id="myFileInput" accept=".pdf, .jpg, .png" onchange="handleFile(this)"> 
+            </div>
+        </div>
+        </div>
+        <div class = "preview1" id="x">
+            <div class="container1">
+                <p class="text2">Word to PDF</p>
+                <div id="preview-container"></div>
+                <label for="myFileInput" class="file-label1">
+                    <span class="file-text1">Select a Word File</span>
+                </label>
+                 <input type="file" id="myFileInput1" accept=".pdf, .jpg, .png" onchange="handleFile(this)">
+            </div>
+        </div>
+        <button class="convert" id="btnn" style="display: none">Convert</button>
+        <script src = "fileconversion.js"></script>
+    </body>
+</html>

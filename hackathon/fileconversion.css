@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap'); 
+*{ 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Montserrat',sans-serif; 
+} 
+nav { 
+  background: #151515; 
+  padding: 5px 40px; 
+  display: flex; 
+  justify-content: center; 
+} 
+ 
+nav ul { 
+  list-style: none; 
+  display: flex; 
+  align-items: center; 
+} 
+.items { 
+  text-align: center; 
+} 
+ 
+.items a { 
+  display: inline-block; 
+  text-align: center; 
+} 
+nav ul li{ 
+  padding: 15px 0; 
+  cursor: pointer; 
+   
+} 
+nav ul li.items{ 
+  position: relative; 
+  width: auto; 
+  margin: 0 16px; 
+  text-align: center; 
+  order: 3; 
+  align-items: center; 
+} 
+nav ul li.items:after{ 
+  position: absolute; 
+  content: ''; 
+  left: 0; 
+  bottom: 5px; 
+  height: 2px; 
+  width: 100%; 
+  background: #33ffff; 
+  opacity: 0; 
+  transition: all 0.2s linear; 
+} 
+nav ul li.items:hover:after{ 
+  opacity: 1; 
+  bottom: 8px; 
+} 
+nav ul li.logo{ 
+  flex: 1; 
+  color: white; 
+  font-size: 23px; 
+  font-weight: 600; 
+  cursor: default; 
+  user-select: none; 
+} 
+nav ul li a{ 
+  color: white; 
+  font-size: 18px; 
+  text-decoration: none; 
+  transition: .4s; 
+} 
+nav ul li:hover a{ 
+  color: cyan; 
+} 
+nav ul li i{ 
+  font-size: 23px; 
+} 
+nav ul li.btn{ 
+  display: none; 
+} 
+nav ul li.btn.hide i:before{ 
+  content: '\f00d'; 
+} 
+
+@media all and (max-width: 900px){ 
+  nav{ 
+    padding: 5px 30px; 
+  } 
+  nav ul li.items{ 
+    width: 100%; 
+    display: none; 
+  } 
+  nav ul li.items.show{ 
+    display: block; 
+  } 
+  nav ul li.btn{ 
+    display: block; 
+  } 
+  nav ul li.items:hover{ 
+    border-radius: 5px; 
+    box-shadow: inset 0 0 5px #33ffff, 
+                inset 0 0 10px #66ffff; 
+  } 
+  nav ul li.items:hover:after{ 
+    opacity: 0; 
+  } 
+}
+
+/* .gridpdf{
+    text-align: left;
+    align-items: center;
+    margin-left: 50px;
+}
+
+
+.myfile{
+    padding-top: 30px;
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: rgb(133, 129, 124);
+    border: transparent;
+    border-radius: 30px;
+    background-color:rgb(226, 226, 226);
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 20px;
+}
+
+input[type=file]{
+    color:rgb(161, 157, 151);
+}
+
+.file-label:hover {
+    background-color: #2980b9;
+  }
+  
+  .file-label .file-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .file-label .file-text {
+    vertical-align: middle;
+  } */
+
+body{
+  position: relative;
+}
+
+.text1{
+  padding-top: 40px;
+  font-size: 40px;
+  margin-left:10px;
+  font-weight: 600;
+
+}
+ 
+.preview{
+  display:flex;
+  flex-direction: row;
+}
+
+.container{
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 300px;
+}
+  /* Styles for the file input */
+  input[type="file"] {
+    display: none; /* Hide the default file input */
+  }
+  
+  .file-label {
+    display:grid;
+    margin-top: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-right:10px;
+    padding-left:10px;
+    background-color: rgb(226, 226, 226);
+    color: rgb(133, 129, 124);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 300px;
+    justify-content: center;
+  }
+  
+  .file-label:hover {
+    background-color: rgb(138, 133, 125);
+    color: rgb(187, 180, 172);
+  }
+  
+
+  
+  /* .file-label .file-text {
+    vertical-align: middle;
+  } */
+  
+  /* Optional styles */
+  .file-label:active {
+    background-color: #1c638b;
+  }
+
+.preview1{
+  padding-top:50px;
+  display:flex;
+  flex-direction: row;
+}
+
+.text2{
+    padding-top: 40px;
+    font-size: 40px;
+    margin-left:10px;
+    font-weight: 600;
+}
+ 
+.container1{
+    display:flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 300px;
+    display: inline-block;
+}
+  /* Styles for the file input */
+  input[type="file"] {
+    display: none; /* Hide the default file input */
+  }
+  
+  .file-label1 {
+    display:grid;
+    margin-top: 30px;
+    margin-bottom:50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgb(226, 226, 226);
+    color: rgb(133, 129, 124);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 300px;
+    justify-content: center;
+  }
+  
+  .file-label1:hover {
+    background-color: rgb(138, 133, 125);
+    color: rgb(187, 180, 172);
+  }
+  
+
+  
+  .file-label .file-text {
+    vertical-align: middle;
+  }
+  
+  /* Optional styles */
+  .file-label1:active {
+    background-color: #1c638b;
+  }
+  
+  #preview-container {
+    display: none;
+    margin-left: 350px;
+  }
+  
+  #preview-container img {
+    max-width: 800px;
+    margin-left: 500px;
+  }
+
+  .convert{
+    display:grid;
+    margin-top: 50px;
+    margin-bottom:50px;
+    margin-left: 770px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(226, 226, 226);
+    color: rgb(133, 129, 124);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    border-color: rgb(143, 137, 130);
+    border-width: 1px;
+    cursor: pointer;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .convert:hover{
+    background-color: rgb(138, 133, 125);
+    color: rgb(187, 180, 172);
+  }
+
+  #s{
+    padding-top:15px;
+    margin-left: 15px;
+    font-size: 20px;
+  }

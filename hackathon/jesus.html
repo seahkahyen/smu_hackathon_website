@@ -1,0 +1,81 @@
+<!DOCTYPE html>   
+<html>   
+<head>   
+   <meta charset="utf-8">   
+   <title>Responsive Navigation Bar</title>   
+   <link rel="stylesheet" href="jesus.css">   
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+     
+</head>   
+  
+<body style="background-color: rgb(226,226,226); position:relative;">   
+   <script src="jesus.js"></script>   
+   <nav>   
+    <ul>   
+       <li class="items" onclick="window.location.href='firstpageLawyer.html';"><a href="#">Home</I></a></li>   
+       <li class="items"><a href="#">About Us</a></li>   
+       <li class="items"><a href="#">Contact Us</a></li>   
+       <li class="items" onclick="window.location.href='billing.html';"><a href="#">Logout</a></li>   
+    </ul>   
+ </nav> 
+ 
+  <hr>  
+ <div class="gridd">  
+  <h1 class="texts">Billing</h1>  
+  <h3 class="texts">Billing history</h3> 
+  <h4 class="texts">Manage billing information and view invoices</h4> 
+ </div> 
+  
+ <section> 
+   <div class = "info-grid">  
+      <div class = "grid1">  
+        Date  
+        <div class="grid1-text">  
+        </div>  
+        <button class="start1">12/1/2023 </button> 
+        <button class="start1">12/2/2023 </button> 
+        <button class="start1">12/3/2023 </button>  
+      </div>  
+      <div class = "grid2">  
+        Type  
+         <div class="grid2-text"> 
+         </div>  
+         <button class="start2">Invoice></button>  
+         <button class="start2">Invoice></button>  
+         <button class="start2">Invoice></button>  
+      </div>  
+      <div class="grid3">  
+        Receipt 
+         <div class="grid3-text">  
+         </div>  
+         <button class="start3">Download ></button>  
+         <button class="start3">Download ></button>  
+         <button class="start3">Download ></button>  
+      </div>  
+    </section> 
+    <section> 
+         
+        <img src="jps.png" class="pic"> 
+    </section> 
+ 
+   </div>  
+   <style>  
+      
+    .info-grid {  
+      display: flex;  
+      justify-content: center;  
+    }  
+      
+    .grid1, .grid2, .grid3 {  
+      display: flex;  
+      flex-direction: column;  
+      align-items: center;  
+      margin: 0 20px; /* Adjust the margin value to add spacing between the divs */  
+      text-align: center;  
+    }  
+ </style>  
+  
+</body>   
+</html>

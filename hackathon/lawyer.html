@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lawyer Front Page</title>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="lawyer.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body style="background-color: rgb(211, 207, 201);">
+        <nav> 
+            <ul> 
+                <li class="items"><a href="#">Home</I></a></li>  
+                <li class="items"><a href="#"
+                onclick = "window.location.href='li.html';">Case Management</a></li>  
+                <li class="items" onclick="window.location.href='timetable.html';"><a href="#">Timetable</a></li>  
+                <li class="items" onclick="window.location.href='b1.html';"><a href="#">Billing Information</a></li>  
+            </ul> 
+         </nav> 
+         <button class="signout" onclick = "window.location.href='billing.html';" >Sign Out</button>
+        <p class="welcome">Welcome, Mr Lawyer</p>
+        <div class="x">
+            <div class="tt">
+                <button class="b1" 
+                onclick = "window.location.href='timetable.html';">TimeTable</button>
+                <div class="ltt">
+                    <p class="y">Court Dates</p>
+                    <p class="y">Meetings</p>
+                    <p class="y">& More</p>
+                </div>
+                
+            </div>
+
+            <div class="tt">
+                <button class="b1"
+                onclick = "window.location.href='li.html';">Litigation</button>
+                <div>
+                    <p class="y">Case Progression</p>
+                    <p class="y">To-Do List</p>
+                    <p class="y">& More</p>
+                </div>
+            </div>
+
+            <div class="tt">
+                <button class="b1" onclick="window.location.href='b1.html';">Billing Selection</button>
+                <div class="lbi">
+                    <p class="y">Utilisation Rate</p>
+                    <p class="y">Realisation Rate</p>
+                    <p class="y">Collection Rate</p>
+                </div>
+            </div>
+
+
+            <div class="tt">
+                <button class="b1"
+                onclick = "window.location.href='fileconversion.html';">File Conversion</button>
+                <div class="lfc">
+                    <p class="y">PDF to Word</p>
+                    <p class="y">JPEC to PDF</p>
+                    <p class="y" id="x" onclick = "window.location.href='firstpage.html';">Drafting Template</p>
+                </div>
+            </div>
+        </div>
+         <script src = "lawyer.js"></script>
+    </body>
+</html>

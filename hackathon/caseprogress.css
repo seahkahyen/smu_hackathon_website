@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');  
+*{  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+  font-family: 'Montserrat',sans-serif;  
+}  
+nav {  
+  background: #151515;  
+  padding: 5px 40px;  
+  display: flex;  
+  justify-content: center;  
+}  
+  
+nav ul {  
+  list-style: none;  
+  display: flex;  
+  align-items: center;  
+}  
+.items {  
+  text-align: center;  
+}  
+  
+.items a {  
+  display: inline-block;  
+  text-align: center;  
+}  
+nav ul li{  
+  padding: 15px 0;  
+  cursor: pointer;  
+    
+}  
+nav ul li.items{  
+  position: relative;  
+  width: auto;  
+  margin: 0 16px;  
+  text-align: center;  
+  order: 3;  
+  align-items: center;  
+}  
+nav ul li.items:after{  
+  position: absolute;  
+  content: '';  
+  left: 0;  
+  bottom: 5px;  
+  height: 2px;  
+  width: 100%;  
+  background: #33ffff;  
+  opacity: 0;  
+  transition: all 0.2s linear;  
+}  
+nav ul li.items:hover:after{  
+  opacity: 1;  
+  bottom: 8px;  
+}  
+nav ul li.logo{  
+  flex: 1;  
+  color: white;  
+  font-size: 23px;  
+  font-weight: 600;  
+  cursor: default;  
+  user-select: none;  
+}  
+nav ul li a{  
+  color: white;  
+  font-size: 18px;  
+  text-decoration: none;  
+  transition: .4s;  
+}  
+nav ul li:hover a{  
+  color: cyan;  
+}  
+nav ul li i{  
+  font-size: 23px;  
+}  
+nav ul li.btn{  
+  display: none;  
+}  
+nav ul li.btn.hide i:before{  
+  content: '\f00d';  
+}  
+ 
+@media all and (max-width: 900px){  
+  nav{  
+    padding: 5px 30px;  
+  }  
+  nav ul li.items{  
+    width: 100%;  
+    display: none;  
+  }  
+  nav ul li.items.show{  
+    display: block;  
+  }  
+  nav ul li.btn{  
+    display: block;  
+  }  
+  nav ul li.items:hover{  
+    border-radius: 5px;  
+    box-shadow: inset 0 0 5px #33ffff,  
+                inset 0 0 10px #66ffff;  
+  }  
+  nav ul li.items:hover:after{  
+    opacity: 0;  
+  }  
+ 
+}
+
+.p1{
+    position:absolute;
+    top:100px;
+    width:300px;
+    left:30px;
+}
+
+.p2{
+    position:absolute;
+    top:530px;
+    width:260px;
+    left:45px;
+}
+
+.searchbar{
+    position:absolute;
+    top:130px;
+    left:1150px;
+    padding:13px;
+    border-color: transparent;
+    border-radius: 40px;
+    width:250px;
+    box-shadow: 2px 2px gray;
+  }
+  
+  .searchbar::placeholder{
+    font-size:16px;
+    
+  }
+
+.p4{
+    position:absolute;
+    top:570px;
+    width:400px;
+    left:1000px;
+    border-radius: 10px;
+} 
+
+.p3{
+    position:absolute;
+    top:570px;
+    width:590px;
+    left:360px;
+}
+
+.bod{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    margin-left:600px;    
+    top:100px;
+    right:370px;
+
+}
+  
+.p5{
+    position:absolute; 
+    z-index: 100;
+    height:320px;
+    top:135px;
+    right:755px;
+}
+.wrapper{
+    width: 700px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    padding-left:300px;
+  }
+  .wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+  }
+  header .icons{
+    display: flex;
+  }
+  header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  header .icons span:hover{
+    background: #f2f2f2;
+  }
+  header .current-date{
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+  .calendar{
+    padding: 20px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 20px;
+  }
+  .calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+  }
+  .days li.inactive{
+    color: #aaa;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: #9B59B6;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
+
+  .text1{
+    font-size: 40px;
+    padding-top: 230px;
+    align-items:center;
+    text-align: center;
+  }
+
+  .text2{
+    font-size: 20px;
+    padding-top: 4%;
+    align-items:center;
+    text-align: center;
+  }
+
+  .explore{
+    position:absolute;
+    left:43%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top:70px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border-width: 1px;
+    box-shadow: 2px 2px rgb(94, 93, 93);
+}
+
+.explore:hover{
+    background-color:#c9c8c8;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.explore:active{
+    background-color:#b1b0b0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 65px;
+    padding-right: 65px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.p1:hover{
+    top:100px;
+    width:305px;
+    left:30px;
+    cursor: pointer;
+}
+
+.p2:hover{
+    width:265px;
+    cursor: pointer;
+}
+
+.p3:hover{
+    width:595px;
+    cursor: pointer;
+}
+
+.p4:hover{
+    width: 405px;
+    cursor: pointer;
+}

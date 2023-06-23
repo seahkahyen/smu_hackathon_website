@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap'); 
+*{ 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Montserrat',sans-serif; 
+} 
+nav { 
+  background: #151515; 
+  padding: 5px 40px; 
+  display: flex; 
+  justify-content: center; 
+} 
+ 
+nav ul { 
+  list-style: none; 
+  display: flex; 
+  align-items: center; 
+} 
+.items { 
+  text-align: center; 
+} 
+ 
+.items a { 
+  display: inline-block; 
+  text-align: center; 
+} 
+nav ul li{ 
+  padding: 15px 0; 
+  cursor: pointer; 
+   
+} 
+nav ul li.items{ 
+  position: relative; 
+  width: auto; 
+  margin: 0 16px; 
+  text-align: center; 
+  order: 3; 
+  align-items: center; 
+} 
+nav ul li.items:after{ 
+  position: absolute; 
+  content: ''; 
+  left: 0; 
+  bottom: 5px; 
+  height: 2px; 
+  width: 100%; 
+  background: #33ffff; 
+  opacity: 0; 
+  transition: all 0.2s linear; 
+} 
+nav ul li.items:hover:after{ 
+  opacity: 1; 
+  bottom: 8px; 
+} 
+nav ul li.logo{ 
+  flex: 1; 
+  color: white; 
+  font-size: 23px; 
+  font-weight: 600; 
+  cursor: default; 
+  user-select: none; 
+} 
+nav ul li a{ 
+  color: white; 
+  font-size: 18px; 
+  text-decoration: none; 
+  transition: .4s; 
+} 
+nav ul li:hover a{ 
+  color: cyan; 
+} 
+nav ul li i{ 
+  font-size: 23px; 
+} 
+nav ul li.btn{ 
+  display: none; 
+} 
+nav ul li.btn.hide i:before{ 
+  content: '\f00d'; 
+} 
+
+@media all and (max-width: 900px){ 
+  nav{ 
+    padding: 5px 30px; 
+  } 
+  nav ul li.items{ 
+    width: 100%; 
+    display: none; 
+  } 
+  nav ul li.items.show{ 
+    display: block; 
+  } 
+  nav ul li.btn{ 
+    display: block; 
+  } 
+  nav ul li.items:hover{ 
+    border-radius: 5px; 
+    box-shadow: inset 0 0 5px #33ffff, 
+                inset 0 0 10px #66ffff; 
+  } 
+  nav ul li.items:hover:after{ 
+    opacity: 0; 
+  } 
+}
+
+body{
+  height: 1000px;
+}
+
+.welcome{
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.signout{
+  position:absolute;
+  background-color: #151515;
+  color: white;
+  font-size: 17px;
+  right:39px;
+  top:20px;
+  border-color:transparent ;
+  transition: 0.1s;
+}
+
+.signout:hover{
+  cursor: pointer;
+}
+
+.x{
+	width: 1000px;
+  height:auto;
+	display: grid;
+	grid-template-rows: 350px 350px;
+	grid-template-columns: 350px 350px ;
+	grid-row-gap: 70px;
+	grid-column-gap: 40px;
+	grid-gap: 40px;
+  justify-content: center;
+  vertical-align: middle;
+  margin-left:230px;
+  margin-top: 40px;
+}
+
+.tt{
+  padding-top: 10px;
+  padding-bottom: 18px;
+  padding-right: 10px;
+  padding-left: 10px;
+	font-size: 30px;
+	color: rgb(12, 11, 11);
+  background-color: rgb(226, 226, 226);
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  box-shadow: 2px 2px rgb(102, 102, 102);
+}
+
+.y{
+  margin-top: 70px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 0px;
+}
+
+#x{
+  text-decoration: underline;
+}
+
+#x:hover{
+  font-weight: 600;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.b1{
+  border-color: transparent;
+  font-size: 23px;
+  background-color: transparent;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 10px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.b1:hover{
+  cursor:pointer;
+  transition:0.1s;
+  font-size: 25px;
+  font-weight: 480;
+}
+
+.b1:active{
+  font-weight: 500;
+}
